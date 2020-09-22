@@ -15,12 +15,22 @@
       return "Username: " . $this -> username . "<br>"
             . "Password: " . $this -> password . "<br>"
             . "email: " . $this -> email . "<br>"
-            . "avatar" . $this -> avatar . "<br>";
+            . $this -> avatar . "<br>"
+            . "<br><br>";
     }
+    // public function getRandom(){
+    //   return $psw1 = rand ( void ): int
+    // }
+
   }
 
-  $u1 = new User("pippo", "pluto", "pippo@mail.com", "x");
-  $u2 = new User("paperino", "rossi", "pap@mail.com", ?><img src="<?php echo "https://upload-icon.s3.us-east-2.amazonaws.com/uploads/icons/png/5202224201557740378-512.png"?><?php  alt="">);
+  $img1 = '<img src="https://upload-icon.s3.us-east-2.amazonaws.com/uploads/icons/png/4664092721557740377-512.png" style="width:50px;">';
+  $img2 = '<img src="https://upload-icon.s3.us-east-2.amazonaws.com/uploads/icons/png/5202224201557740378-512.png" style="width:50px;">';
+
+
+
+  $u1 = new User("pippo", "pluto", "pippo@mail.com", "$img1");
+  $u2 = new User("paperino", "rossi", "pap@mail.com", "$img2");
 
   echo $u1;
   echo $u2;
