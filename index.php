@@ -20,7 +20,7 @@
   }
 
   $u1 = new User("pippo", "pluto", "pippo@mail.com", "x");
-  $u2 = new User("paperino", "rossi", "pap@mail.com", ?><img src="https://lh3.googleusercontent.com/proxy/X-8yhOtrra3GbJU7fN7j5poCHMv-MR2DmAQCMc5VTn-f4PLKLHwhOLqzeuuu_hIH5xzodIE2R-T9HTvTgqj0_MAN2nfH_y8IPitKsObT508906Bi-tZlLq7wyYzfwylXPnZg273D6Cwivg1WdkCT_4PO" alt="">  <?php);
+  $u2 = new User("paperino", "rossi", "pap@mail.com", ?><img src="<?php echo "https://upload-icon.s3.us-east-2.amazonaws.com/uploads/icons/png/5202224201557740378-512.png"?><?php  alt="">);
 
   echo $u1;
   echo $u2;
